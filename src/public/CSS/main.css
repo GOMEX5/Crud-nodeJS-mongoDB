@@ -5,20 +5,30 @@
 }
 
 body {
-    background: 
+    /* background: 
     linear-gradient(135deg, black 25%, transparent 25%) -50px 0,
     linear-gradient(225deg, black 25%, transparent 25%) -50px 0,
     linear-gradient(315deg, black 25%, transparent 25%),
     linear-gradient(45deg, black 25%, transparent 25%);	
     background-size: 2em 2em;
-    background-color: #232323;
+    background-color: #232323; */
+    background-image: url('/IMG/fondo.png');
 }
 
 .cont{
     width: 390px;
     margin: 0 auto;
     margin-top: 100px;
+    text-align: center;
 }
+
+.card{
+    background-color: rgba(255, 255, 255, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 
 .tbm{
     margin-top: 100px;
@@ -30,3 +40,32 @@ body {
     margin-left: 20px;
 }
 
+#contenedor-carga{
+    background-color: rgba(255, 240, 245, 0.9);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    transition: all 1s easy;
+    z-index: 10000;
+}
+
+#carga{
+    border: 15px solid #ccc;
+    border-top-color: #252525;
+    border-top-style: groove;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
