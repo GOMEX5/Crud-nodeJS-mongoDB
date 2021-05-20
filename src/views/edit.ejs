@@ -1,0 +1,24 @@
+<%- include('partials/_head') %>
+    <%- include('partials/_nav') %>
+        <div class="container cont animate__animated animate__flipInY">
+            <div class="card">
+                <div class="card-body">
+                    <form action="/update/<%=task._id%>" method="POST">
+                        <div class="form-group mb-4">
+                            <input type="text" name="title" placeholder="Title" class="form-control"
+                                value="<%= task.title %>" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <textarea name="description" cols="80" class="form-control" placeholder="Description"
+                                required><%= task.description %></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Update</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        <%- include('partials/_footer') %>
