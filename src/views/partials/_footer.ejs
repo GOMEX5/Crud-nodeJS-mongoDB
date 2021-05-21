@@ -1,3 +1,19 @@
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <% if(typeof alert != "undefined") {%> 
+        <script>
+            Swal.fire({
+                title: '<%= alertTitle %>',
+                text: '<%= alertMessage %>',
+                icon: '<%= alertIcon %>',
+                showConfirmButton: <%= showConfirmButton %>,
+                timer: <%= timer %>
+            }).then(() => {
+                window.location = '/<%= ruta %>'
+            })
+        </script>
+    <% } %> 
+
 <script src="/JS/bootstrap.min.js"></script>
 <script src="/JS/app.js"></script>
 </body>

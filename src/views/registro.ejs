@@ -1,0 +1,29 @@
+<%- include('partials/_head') %>
+
+<div class="ancho_Card">
+    <div class="container">
+        <div class="card animate__animated animate__flipInY  cardCss2">
+            <div class="card-header bg-dark text-white text-center">
+                <h1>Registro</h1>
+            </div>
+            <div class="card-body">
+                <form action="/registrar" method="POST">
+                    <div class="form-group mt-3">
+                        <input type="text" name="user" required placeholder="Nombre de usuario" class="form-control">
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="password" name="pass" required placeholder="Contrasena" class="form-control">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-dark mt-3">
+                            Registrar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<%- include('partials/_footer') %>

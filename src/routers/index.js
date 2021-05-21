@@ -1,6 +1,13 @@
 const {Router} = require('express');
 const router = Router();
 const controllers = require('../controllers/main');
+const login = require('../controllers/login');
+
+router.get('/login',login.login)
+router.post('/logiar',login.logiar)
+router.get('/registro',login.registro)
+router.post('/registrar',login.registrar)
+router.get('/logout',login.logout)
 
 router.get('/',controllers.home);
 

@@ -2,6 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Spicy Rice', cursive;
+}
+
+@font-face {
+    font-family: "Spicy Rice";
+    src: url("/fonts/Spicy_Rice/SpicyRice-Regular.ttf");
+}
+
+.ancho_Card{
+    margin-top: 100px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 body {
@@ -13,6 +26,7 @@ body {
     background-size: 2em 2em;
     background-color: #232323; */
     background-image: url('/IMG/fondo.png');
+    font-family: 'Spicy Rice', cursive;
 }
 
 .cont{
